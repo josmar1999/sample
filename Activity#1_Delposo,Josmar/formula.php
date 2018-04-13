@@ -1,35 +1,32 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
-	<form action="#" method="POST">
-
-	<label>Input the Celsuis</label>
-	<input type="text" name="temp">
-<br>
-
-	<input type="submit" name="submit" id="submit">
-	</form>
-</body>
+    <head></head>
+    <body>
+    
+            <br>
+            <form action = '#' method = 'post'>
+                Input Temperature in Celsius <input type = "text" name = 'tempe' placeholder = 'Celsius'>
+                <br>
+             lo9
+                <input type = 'submit' name = 'submit' value = 'Submit'><br>
+            </form>
+    </body>
 </html>
+
 <?php
-if (isset($_POST['submit'])){
-	$temp = $_POST['temp'];
-	$add = 273.15;
-	$cal = 0;
-
-
-	$cal = $add + $temp;
-
-	echo "Celsuis is:".$temp;
-	echo "<br>"; 
-	echo "Kelvin is:".$cal;
-
-	
-	
-
-}
-
+    if(isset($_POST['submit'])){
+        $tempe = $_POST['tempe'];
+        
+        
+        $add = 273.15;
+        $total =0;
+        
+        $total = $tempe + $add;
+        
+        echo "Celsius: $tempe";
+        echo"<br>";
+        echo "Kelvin: $total";
+        echo"<br>";
+        
+    }
 ?>
+
